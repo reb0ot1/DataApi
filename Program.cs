@@ -26,6 +26,14 @@ app.MapGet("/weatherforecast", () =>
     return forecast;
 });
 
+app.MapGet("/testendpoint", () =>
+{
+    var forecast = "this is a test endpoint";
+    return forecast;
+});
+
+
+
 app.Run();
 
 internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
