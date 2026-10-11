@@ -1,0 +1,9 @@
+services:
+  app:
+    image: ${DOCKERHUB_USERNAME}/${DOCKERHUB_REPOSITORY}:${RELEASE_VERSION}
+    container_name: dataapi
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
