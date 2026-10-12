@@ -28,11 +28,9 @@ app.MapGet("/weatherforecast", () =>
 
 app.MapGet("/testendpoint", () =>
 {
-    var forecast = "this is a test endpoint v2";
+    var forecast = "this is a test endpoint v3";
     return forecast;
 });
-
-
 
 app.Run();
 
